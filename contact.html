@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./styles/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Contact Us</title>
+	</head>
+	<body>
+		<nav
+			class="py-[18px] px-20 relative flex justify-center lg:justify-between items-center"
+		>
+			<button id="menu-toggle" class="absolute left-6 md:left-[30px] lg:hidden">
+				<img src="./assets/Menu.png" alt="hamburger" />
+			</button>
+			<a href="index.html"><img src="./assets/logo.svg" alt="logo" /></a>
+			<a
+				href="contact.html"
+				class="hidden lg:inline-block rounded-[34px] bg-[#008FD9] text-base py-3 px-[31px] text-white leading-5"
+				>Contact</a
+			>
+			<div
+				id="mobile-menu"
+				class="hidden z-10 p-5 absolute text-center w-full top-20 min-h-20 bg-white shadow-lg focus:outline-none"
+				role="menu"
+				aria-orientation="vertical"
+				aria-labelledby="menu-button"
+				tabindex="-1"
+			>
+				<a href="index.html" class="block mb-8">Home</a>
+
+				<a
+					href="contact.html"
+					class="rounded-[34px] inline-block mb-10 bg-[#008FD9] text-base py-3 px-[31px] text-white"
+					>Contact</a
+				>
+			</div>
+		</nav>
+		<section
+			class="bg-[#F2F9FD] px-6 md:px-20 lg:px-32 py-10 md:py-12 lg:py-20 flex flex-col"
+		>
+			<h1
+				class="text-2xl md:text-3xl lg:text-[40px] text-center font-extrabold mb-10 lg:mb-20"
+			>
+				Contact Us
+			</h1>
+			<div
+				class="flex flex-col lg:items-center lg:flex-row gap-10 md:gap-12 lg:gap-16"
+			>
+				<form class="bg-white rounded-[20px] p-5 lg:p-8 w-full lg:w-[636px]">
+					<div
+						class="flex flex-col md:flex-row mb-3 md:mb-4 lg:mb-5 gap-2 md:gap-4 lg:gap-5"
+					>
+						<input
+							type="text"
+							placeholder="Name"
+							class="bg-[#FAF9FC] focus:outline-none pl-4 py-3 rounded-[10px] w-full placeholder:text-sm placeholder:text-black/50"
+						/>
+						<input
+							type="email"
+							placeholder="Email"
+							class="bg-[#FAF9FC] focus:outline-none pl-4 py-3 rounded-[10px] w-full placeholder:text-sm placeholder:text-black/50"
+						/>
+					</div>
+					<input
+						type="text"
+						placeholder="Subject"
+						class="bg-[#FAF9FC] mb-3 md:mb-4 lg:mb-5 focus:outline-none pl-4 py-3 rounded-[10px] w-full placeholder:text-sm placeholder:text-black/50"
+					/>
+					<textarea
+						placeholder="Message"
+						class="bg-[#FAF9FC] h-36 mb-3 md:mb-4 lg:mb-5 focus:outline-none pl-4 py-3 rounded-[10px] w-full placeholder:text-sm placeholder:text-black/50"
+					></textarea>
+					<button class="bg-[#008FD9] w-full text-white py-3 rounded-[30px]">
+						Send
+					</button>
+				</form>
+				<div>
+					<div class="flex gap-5 mb-10">
+						<img src="./assets/touch.svg" alt="icon" />
+						<div class="flex flex-col gap-3">
+							<p class="text-base font-medium">Get In Touch</p>
+							<p class="max-w-[23rem] text-sm">
+								Need to contact us? We look forward to assisting you.Feel free
+								to give us a call or use the contact form.
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-5 mb-10">
+						<img src="./assets/address.svg" alt="icon" />
+						<div class="flex flex-col gap-3">
+							<p class="text-base font-medium">Address</p>
+							<p class="max-w-[23rem] text-sm">
+								119 W. Oglethorpe Ave. Savannah, GA 31401
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-5 mb-10">
+						<img src="./assets/mailing.svg" alt="icon" />
+						<div class="flex flex-col gap-3">
+							<p class="text-base font-medium">Mailing Address</p>
+							<p class="max-w-[23rem] text-sm">
+								P.O. Box 9330 Savannah, GA 31412
+							</p>
+						</div>
+					</div>
+					<div class="flex gap-5 mb-10">
+						<img src="./assets/phone.svg" alt="icon" />
+						<div class="flex flex-col gap-3">
+							<p class="text-base font-medium">Phone</p>
+							<p class="max-w-[23rem] text-sm">(912) 233-3254</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<footer class="my-4 md:my-7 text-center max-w-64 mx-auto md:max-w-full">
+			© Consoli Tech, LLC 2024. All Rights Reserved.
+		</footer>
+		<script src="./script.js"></script>
+	</body>
+</html>
